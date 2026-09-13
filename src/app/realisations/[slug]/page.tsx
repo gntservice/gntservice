@@ -35,13 +35,14 @@ export default async function ProjectDetailPage({ params }: Props) {
   if (!project) notFound();
 
   const service = getService(project.serviceSlug);
+  const gallery = project.images?.length ? project.images : [project.image];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: project.title,
     description: project.description,
-    image: project.image,
+    image: gallery,
     url: `${site.url}/realisations/${project.slug}`,
     creator: { "@id": `${site.url}/#organization` },
   };
@@ -69,15 +70,32 @@ export default async function ProjectDetailPage({ params }: Props) {
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:px-8">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#f7f6f3] sm:aspect-[16/10]">
-            <Photo
-              src={project.image}
-              alt={`${project.title} — GNT Service`}
-              fill
-              priority
-              sizes="(min-width: 1024px) 55vw, 100vw"
-              className="object-cover"
-            />
+          <div className="space-y-3">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-[#f7f6f3] sm:aspect-[16/8]">
+              <Photo
+                src={gallery[0]}
+                alt={`${project.title} — GNT Service`}
+                fill
+                priority
+                sizes="(min-width: 1024px) 55vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+            {gallery.length > 1 ? (
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                {gallery.slice(1).map((src, index) => (
+                  <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#f7f6f3]">
+                    <Photo
+                      src={src}
+                      alt={`${project.title} — vue ${index + 2}`}
+                      fill
+                      sizes="(min-width: 1024px) 18vw, 45vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </div>
           <div>
             <h2 className="font-display text-2xl font-semibold text-ink">{project.title}</h2>

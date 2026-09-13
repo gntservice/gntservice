@@ -13,7 +13,7 @@ export function JsonLd() {
         url: site.url,
         email: site.email,
         telephone: phones.map((phone) => phone.display),
-        image: `${site.url}/logo.png`,
+        image: [`${site.url}/og-image.jpg`, `${site.url}/logo.png`],
         logo: `${site.url}/logo.png`,
         address: {
           "@type": "PostalAddress",

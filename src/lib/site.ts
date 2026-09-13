@@ -197,6 +197,7 @@ export type Project = {
   category: string;
   serviceSlug: string;
   image: string;
+  images?: string[];
   excerpt: string;
   description: string;
   highlights: string[];
@@ -204,6 +205,30 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "stade-moulay-abdellah-rabat",
+    title: "Projet Stade Moulay Abdellah — Rabat",
+    category: "Charpente métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789317874/0be70a7d-702f-4029-b587-07a3769649b1.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789317874/0be70a7d-702f-4029-b587-07a3769649b1.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789317890/3c8195df-8eb8-43f0-8b8e-5796f9845da6.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789317866/d7c76240-f6dd-4e80-8ad9-bdea357d5d63.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789317878/c91fb598-1448-431c-b9cc-0d1a7e9fdda0.jpg",
+    ],
+    excerpt:
+      "Intervention sur le chantier du Stade Moulay Abdellah à Rabat : charpente métallique et structure de grande portée.",
+    description:
+      "GNT Service intervient sur le projet du Stade Moulay Abdellah à Rabat, un ouvrage d’envergure nationale. Le chantier comprend la mise en œuvre d’une charpente métallique de grande portée, le suivi des assemblages et l’accompagnement des équipes sur site, dans un environnement technique exigeant.",
+    highlights: [
+      "Charpente métallique de grande portée",
+      "Structure de toiture et ossature du stade",
+      "Suivi du montage et des assemblages sur chantier",
+      "Coordination des travaux à Rabat",
+    ],
+    closing: "GNT Service — Du projet à la réalisation, à l’échelle des grands ouvrages.",
+  },
   {
     slug: "ferraillage-coffrage-beton",
     title: "Avancement des travaux",
