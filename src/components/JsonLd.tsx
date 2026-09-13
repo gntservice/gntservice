@@ -17,9 +17,12 @@ export function JsonLd() {
         logo: `${site.url}/logo.png`,
         address: {
           "@type": "PostalAddress",
+          streetAddress: site.street,
+          postalCode: site.postalCode,
           addressLocality: site.city,
           addressCountry: "MA",
         },
+        hasMap: site.maps.google,
         areaServed: { "@type": "Country", name: "Morocco" },
         knowsLanguage: "fr",
         hasOfferCatalog: {

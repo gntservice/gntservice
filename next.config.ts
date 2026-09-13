@@ -31,6 +31,7 @@ const nextConfig: NextConfig = {
               "img-src 'self' data: blob: https://images.unsplash.com https://res.cloudinary.com",
               "font-src 'self' data:",
               "connect-src 'self'",
+              "frame-src https://www.google.com https://maps.google.com",
               "frame-ancestors 'none'",
               "base-uri 'self'",
               "form-action 'self'",

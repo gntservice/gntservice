@@ -5,9 +5,19 @@ export const site = {
   slogan: "Du projet à la réalisation",
   city: "Casablanca",
   country: "Maroc",
+  postalCode: "20250",
+  street: "Rue C",
+  address: "Rue C, 20250 Casablanca, Maroc",
   email: "contact@gntservice.ma",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   linkedin: "",
+  maps: {
+    apple: "https://maps.apple/p/0PN3E_gV6FYPxM",
+    google:
+      "https://www.google.com/maps/search/?api=1&query=Rue+C+20250+Casablanca+Morocco",
+    embed:
+      "https://maps.google.com/maps?q=Rue+C,+20250+Casablanca,+Morocco&z=16&output=embed",
+  },
 } as const;
 
 export const phones = [

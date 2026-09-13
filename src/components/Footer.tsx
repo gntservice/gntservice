@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 import { nav, phones, services, site } from "@/lib/site";
-import { IconMail, IconPhone } from "./icons";
+import { IconMail, IconPhone, IconPin } from "./icons";
 
 export function Footer() {
   return (
@@ -66,6 +66,17 @@ export function Footer() {
               <a href={`mailto:${site.email}`} className="inline-flex min-h-10 items-center gap-2 hover:text-white">
                 <IconMail className="h-4 w-4 shrink-0 text-accent" />
                 <span className="break-all">{site.email}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.maps.google}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-10 items-start gap-2 hover:text-white"
+              >
+                <IconPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span>{site.address}</span>
               </a>
             </li>
           </ul>

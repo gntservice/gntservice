@@ -26,7 +26,7 @@ export default function ContactPage() {
             <div>
               <h2 className="font-display text-xl font-semibold text-ink">Coordonnées</h2>
               <p className="mt-3 text-sm text-ink/55">
-                {site.city}, {site.country}. Réponse sous 24 à 48 heures ouvrées.
+                {site.address}. Réponse sous 24 à 48 heures ouvrées.
               </p>
             </div>
             <ul className="space-y-4">
@@ -54,14 +54,21 @@ export default function ContactPage() {
                   </span>
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-sm text-ink">
-                <span className="mt-0.5 text-accent">
-                  <IconPin className="h-4 w-4" />
-                </span>
-                <span>
-                  <span className="block text-xs tracking-wide text-ink/40 uppercase">Zone</span>
-                  {site.city} et tout le Maroc
-                </span>
+              <li>
+                <a
+                  href={site.maps.google}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex min-h-11 items-start gap-3 text-sm text-ink hover:text-ink/70"
+                >
+                  <span className="mt-0.5 text-accent">
+                    <IconPin className="h-4 w-4" />
+                  </span>
+                  <span>
+                    <span className="block text-xs tracking-wide text-ink/40 uppercase">Adresse</span>
+                    {site.address}
+                  </span>
+                </a>
               </li>
             </ul>
           </aside>
@@ -73,6 +80,37 @@ export default function ContactPage() {
               recontacter.
             </p>
             <DevisForm />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f7f6f3] pb-12 sm:pb-16 lg:pb-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-[0.65rem] font-semibold tracking-[0.22em] text-accent-dark uppercase sm:text-[0.7rem]">
+                Localisation
+              </p>
+              <h2 className="mt-2 font-display text-2xl font-semibold text-ink">Nous trouver</h2>
+            </div>
+            <a
+              href={site.maps.google}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center text-sm font-semibold text-ink underline-offset-4 hover:underline"
+            >
+              Ouvrir dans Google Maps
+            </a>
+          </div>
+          <div className="overflow-hidden rounded-2xl ring-1 ring-black/5">
+            <iframe
+              title={`Carte Google Maps — ${site.address}`}
+              src={site.maps.embed}
+              className="h-[280px] w-full border-0 sm:h-[380px] lg:h-[440px]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
