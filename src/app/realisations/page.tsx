@@ -6,7 +6,7 @@ import { projects } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Réalisations",
   description:
-    "Projets GNT Service : construction métallique, sablage, peinture industrielle et conception architecturale au Maroc.",
+    "Chantiers GNT Service : ferraillage, coffrage, béton et réalisations de construction au Maroc.",
   alternates: { canonical: "/realisations" },
   openGraph: { url: "/realisations" },
 };

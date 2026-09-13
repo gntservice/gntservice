@@ -9,7 +9,7 @@ export const site = {
   street: "Rue C",
   address: "Rue C, 20250 Casablanca, Maroc",
   email: "contact@gntservice.ma",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gntservice.ma",
   linkedin: "",
   maps: {
     apple: "https://maps.apple/p/0PN3E_gV6FYPxM",
@@ -197,50 +197,73 @@ export type Project = {
   category: string;
   serviceSlug: string;
   image: string;
+  excerpt: string;
+  description: string;
+  highlights: string[];
+  closing?: string;
 };
 
 export const projects: Project[] = [
   {
-    slug: "bouteilles-industrielles",
-    title: "Bouteilles industrielles",
-    category: "Peinture industrielle",
+    slug: "ferraillage-coffrage-beton",
+    title: "Avancement des travaux",
+    category: "Construction & gros œuvre",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789309559/1789038206339.jpg",
+    excerpt:
+      "Sur chantier, mise en place du ferraillage et du coffrage destinés à recevoir les éléments en béton.",
+    description:
+      "Sur chantier, les travaux avancent avec la mise en place du ferraillage et du coffrage destinés à recevoir les éléments en béton. Chez GNT Service, nous accordons une attention particulière à la qualité d’exécution, à la précision des travaux et à la sécurité sur site.",
+    highlights: [
+      "Un ferraillage dense et soigneusement réparti",
+      "Mise en place des coffrages",
+      "Préparation des éléments structurels en béton",
+      "Organisation et suivi des travaux sur site",
+    ],
+    closing: "Construire avec rigueur, réaliser avec qualité.",
+  },
+  {
+    slug: "charpente-metallique-modelisation-3d",
+    title: "Préparation 3D — Charpente métallique",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789310456/1788992567212.jpg",
+    excerpt:
+      "Modélisation 3D sur Tekla Structures d’une charpente métallique : escaliers, planchers et détails d’assemblage.",
+    description:
+      "Nous avançons actuellement sur la modélisation 3D sur Tekla Structures d’un nouveau projet de charpente métallique, avec une attention particulière portée aux escaliers, planchers et détails d’assemblage. Cette étape permet d’anticiper chaque détail en 3D pour garantir une fabrication précise et un montage efficace sur chantier. Prochaine étape : le lancement de la fabrication et la concrétisation du projet.",
+    highlights: [
+      "Dossier de fabrication",
+      "Plans de montage",
+      "Détails d’assemblage",
+      "Plans et repérages nécessaires à la fabrication",
+    ],
+    closing: "GNT Service — De la modélisation 3D à la fabrication et au montage.",
+  },
+  {
+    slug: "sablage-peinture-controle-qualite",
+    title: "Sablage & peinture industrielle",
+    category: "Traitement de surface",
     serviceSlug: "sablage-peinture",
-    image:
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    slug: "tuyauterie-industrielle",
-    title: "Tuyauterie",
-    category: "Sablage & métallisation",
-    serviceSlug: "construction-amenagement",
-    image:
-      "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    slug: "structures-metalliques",
-    title: "Structures métalliques",
-    category: "Traitement anticorrosion",
-    serviceSlug: "construction-amenagement",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    slug: "reservoirs-cuves",
-    title: "Réservoirs & cuves",
-    category: "Préparation de surface",
-    serviceSlug: "sablage-peinture",
-    image:
-      "https://images.unsplash.com/photo-1581094794329-cdc91e13ffd3?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    slug: "projet-architectural",
-    title: "Projet architectural",
-    category: "Conception & modélisation 3D",
-    serviceSlug: "construction-amenagement",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789310831/Screenshot_2026-09-13_154426.png",
+    excerpt:
+      "Sablage, métallisation, anticorrosion et peinture industrielle, jusqu’au contrôle d’épaisseur et à la finition.",
+    description:
+      "GNT Service prépare et protège les pièces métalliques de bout en bout : sablage, métallisation, décapage, traitement anticorrosion et peinture industrielle. La finition est validée par un contrôle qualité sur site, notamment la mesure d’épaisseur du revêtement, pour des ouvrages durables.",
+    highlights: [
+      "Sablage et métallisation",
+      "Décapage et préparation de surface",
+      "Traitement anticorrosion",
+      "Peinture industrielle",
+      "Finition et contrôle qualité",
+    ],
+    closing: "Des surfaces préparées, protégées et contrôlées.",
   },
 ];
+
+export function getProject(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}
 
 export const stats = [
   { value: "+50", label: "Projets réalisés" },

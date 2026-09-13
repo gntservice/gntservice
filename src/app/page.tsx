@@ -125,7 +125,7 @@ export default function HomePage() {
               <IconArrow className="h-3.5 w-3.5" />
             </Link>
           </div>
-          <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}

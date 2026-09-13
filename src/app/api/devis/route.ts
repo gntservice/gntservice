@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { sendDevisMail } from "@/lib/mail";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { devisSchema } from "@/lib/validations";
 import { getService, site } from "@/lib/site";
@@ -41,12 +41,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const host = process.env.SMTP_HOST;
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-  const to = process.env.MAIL_TO ?? site.email;
-
-  if (!host || !user || !pass) {
+  if (!process.env.SMTP_PASS) {
     return NextResponse.json(
       { message: "L’envoi d’e-mail n’est pas encore configuré. Contactez-nous par téléphone." },
       { status: 503 },
@@ -54,13 +49,6 @@ export async function POST(request: Request) {
   }
 
   const activity = getService(parsed.data.activity);
-  const transporter = nodemailer.createTransport({
-    host,
-    port: Number(process.env.SMTP_PORT ?? 465),
-    secure: Number(process.env.SMTP_PORT ?? 465) === 465,
-    auth: { user, pass },
-  });
-
   const safe = {
     name: escapeHtml(parsed.data.name),
     phone: escapeHtml(parsed.data.phone),
@@ -70,11 +58,9 @@ export async function POST(request: Request) {
   };
 
   try {
-    await transporter.sendMail({
-      from: process.env.MAIL_FROM ?? `"Site ${site.name}" <${user}>`,
-      to,
+    await sendDevisMail({
       replyTo: parsed.data.email,
-      subject: `Demande de devis — ${activity?.title ?? "GNT Service"}`,
+      subject: `Demande de devis — ${activity?.title ?? site.name}`,
       text: [
         `Nom : ${parsed.data.name}`,
         `Téléphone : ${parsed.data.phone}`,
@@ -84,15 +70,19 @@ export async function POST(request: Request) {
         parsed.data.message,
       ].join("\n"),
       html: `
-        <h2>Nouvelle demande de devis</h2>
-        <p><strong>Nom :</strong> ${safe.name}</p>
-        <p><strong>Téléphone :</strong> ${safe.phone}</p>
-        <p><strong>E-mail :</strong> ${safe.email}</p>
-        <p><strong>Activité :</strong> ${safe.activity}</p>
-        <p><strong>Message :</strong><br />${safe.message}</p>
+        <div style="font-family:Arial,sans-serif;max-width:560px;color:#0b0d10">
+          <p style="font-size:12px;letter-spacing:2px;color:#c49200;text-transform:uppercase">GNT Service</p>
+          <h2 style="margin:8px 0 20px">Nouvelle demande de devis</h2>
+          <p><strong>Nom :</strong> ${safe.name}</p>
+          <p><strong>Téléphone :</strong> ${safe.phone}</p>
+          <p><strong>E-mail :</strong> ${safe.email}</p>
+          <p><strong>Activité :</strong> ${safe.activity}</p>
+          <p><strong>Message :</strong><br />${safe.message}</p>
+        </div>
       `,
     });
-  } catch {
+  } catch (error) {
+    console.error("[devis] Zoho SMTP error", error);
     return NextResponse.json(
       { message: "L’e-mail n’a pas pu être envoyé. Appelez-nous directement." },
       { status: 502 },
