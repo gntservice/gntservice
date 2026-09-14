@@ -90,8 +90,7 @@ export const services: Service[] = [
       "Gros œuvre, entreprise générale, construction métallique et conception architecturale — du plan à la livraison.",
     description:
       "GNT Service intervient en gros œuvre et en entreprise générale sur des projets ambitieux : structures en béton armé, opérations urbaines, construction métallique et aménagement sur mesure.",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393872/1.png",
     prestations: [
       "Gros œuvre et entreprise générale",
       "Structures en béton armé complexes",
@@ -123,8 +122,7 @@ export const services: Service[] = [
       "Sécurité, propreté et espaces verts : un interlocuteur unique pour l’entretien quotidien de vos sites.",
     description:
       "GNT Service assure le gardiennage, le nettoyage et l’entretien paysager de sites industriels, tertiaires et résidentiels. Des équipes encadrées, des plannings clairs, un suivi de qualité.",
-    image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393872/2.png",
     prestations: [
       "Gardiennage et surveillance de sites",
       "Nettoyage industriel et tertiaire",
@@ -146,8 +144,7 @@ export const services: Service[] = [
       "Mise à disposition de personnel, intérim et gestion de vos services généraux pour absorber l’activité.",
     description:
       "GNT Service vous accompagne sur le recrutement, l’intérim et le facility management : les bonnes compétences, au bon moment, avec un pilotage clair de vos services support.",
-    image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=80",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393870/3.png",
     prestations: [
       "Recrutement de profils qualifiés",
       "Intérim et renfort d’équipes",
@@ -169,8 +166,7 @@ export const services: Service[] = [
       "Sablage, métallisation, décapage, anticorrosion et peinture industrielle — de la préparation à la finition contrôlée.",
     description:
       "GNT Service prépare et protège vos surfaces métalliques : sablage, métallisation, décapage, traitement anticorrosion et peinture industrielle, avec contrôle qualité en finition.",
-    image:
-      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=80",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393873/4.png",
     prestations: [
       "Sablage et métallisation",
       "Décapage et préparation de surface",
@@ -205,6 +201,28 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "charpente-metallique-couverture",
+    title: "Charpente métallique pour couverture",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789394060/Screenshot_2026-09-14_145356.png",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789394060/Screenshot_2026-09-14_145356.png",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789394062/Screenshot_2026-09-14_145406.png",
+    ],
+    excerpt:
+      "Charpente métallique de grande portée destinée à la couverture d’un bâtiment industriel.",
+    description:
+      "Réalisation d’une charpente métallique pour couverture : fermes, pannes et ossature de grande portée, montées pour recevoir la toiture. GNT Service a assuré la fabrication, le montage et l’alignement de la structure, afin de garantir une couverture stable et durable.",
+    highlights: [
+      "Charpente métallique de grande portée",
+      "Fermes, pannes et ossature de toiture",
+      "Montage et alignement sur chantier",
+      "Préparation de la couverture",
+    ],
+    closing: "Une structure prête à recevoir sa couverture.",
+  },
   {
     slug: "structure-multi-etages",
     title: "Structure multi-étages",

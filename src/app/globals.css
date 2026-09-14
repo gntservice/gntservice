@@ -84,4 +84,21 @@ textarea {
   .partners-track {
     animation: none;
   }
+
+  .hero-slide-zoom {
+    animation: none;
+  }
+}
+
+@keyframes hero-slide-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.hero-slide-zoom {
+  animation: hero-slide-zoom 8s ease-out forwards;
 }

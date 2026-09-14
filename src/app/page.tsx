@@ -2,12 +2,12 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { IconArrow, IconGear, IconShield, IconUsers } from "@/components/icons";
+import { HeroSlider } from "@/components/HeroSlider";
 import { Partners } from "@/components/Partners";
-import { Photo } from "@/components/Photo";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
-import { faqs, images, primaryPhone, projects, services, site, stats, trust } from "@/lib/site";
+import { faqs, primaryPhone, projects, services, site, stats, trust } from "@/lib/site";
 
 const trustIcons = [IconShield, IconGear, IconUsers];
 
@@ -15,55 +15,44 @@ export default function HomePage() {
   return (
     <>
       <FaqJsonLd items={[...faqs]} />
-      <section className="relative min-h-[100svh] overflow-hidden bg-ink text-white">
-        <Photo
-          src={images.hero}
-          alt="Ouvrier industriel au travail — GNT Service"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[70%_center] sm:object-center"
-        />
-        <div className="absolute inset-0 bg-linear-to-b from-ink/80 via-ink/75 to-ink/90 sm:bg-linear-to-r sm:from-ink sm:via-ink/80 sm:to-ink/25" />
-        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-4 pt-[calc(var(--header-h)+env(safe-area-inset-top)+1.5rem)] pb-10 sm:justify-center sm:px-6 sm:pb-16 lg:px-8">
-          <p className="text-[0.65rem] font-semibold tracking-[0.22em] text-accent uppercase sm:text-[0.7rem] sm:tracking-[0.3em]">
-            Entreprise générale — Casablanca
-          </p>
-          <h1 className="mt-3 max-w-3xl font-display text-[2rem] leading-[1.1] font-semibold tracking-tight sm:mt-5 sm:text-5xl lg:text-6xl">
-            Des solutions durables pour vos{" "}
-            <span className="text-accent">projets industriels</span>
-          </h1>
-          <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-base lg:text-lg">
-            {site.name} vous accompagne de la conception à la réalisation : construction,
-            aménagement, services aux sites, recrutement et traitement de surface.
-          </p>
-          <div className="mt-7 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row">
-            <ButtonLink href="/contact" className="w-full sm:w-auto">
-              Demander un devis
-            </ButtonLink>
-            <ButtonLink href="/services" variant="outlineLight" className="w-full sm:w-auto">
-              Découvrir nos services
-              <IconArrow />
-            </ButtonLink>
-          </div>
-          <ul className="mt-10 grid max-w-3xl gap-5 sm:mt-14 sm:grid-cols-3 sm:gap-6">
-            {trust.map((item, index) => {
-              const Icon = trustIcons[index] ?? IconShield;
-              return (
-                <li key={item.title} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/8 text-accent">
-                    <Icon className="h-4 w-4" />
-                  </span>
-                  <div>
-                    <p className="text-sm font-semibold">{item.title}</p>
-                    <p className="mt-1 text-xs leading-relaxed text-white/50">{item.text}</p>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+      <HeroSlider>
+        <p className="text-[0.65rem] font-semibold tracking-[0.22em] text-accent uppercase sm:text-[0.7rem] sm:tracking-[0.3em]">
+          Entreprise générale — Casablanca
+        </p>
+        <h1 className="mt-3 max-w-3xl font-display text-[2rem] leading-[1.1] font-semibold tracking-tight sm:mt-5 sm:text-5xl lg:text-6xl">
+          Des solutions durables pour vos{" "}
+          <span className="text-accent">projets industriels</span>
+        </h1>
+        <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-base lg:text-lg">
+          {site.name} vous accompagne de la conception à la réalisation : construction,
+          aménagement, services aux sites, recrutement et traitement de surface.
+        </p>
+        <div className="mt-7 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row">
+          <ButtonLink href="/contact" className="w-full sm:w-auto">
+            Demander un devis
+          </ButtonLink>
+          <ButtonLink href="/services" variant="outlineLight" className="w-full sm:w-auto">
+            Découvrir nos services
+            <IconArrow />
+          </ButtonLink>
         </div>
-      </section>
+        <ul className="mt-10 grid max-w-3xl gap-5 sm:mt-14 sm:grid-cols-3 sm:gap-6">
+          {trust.map((item, index) => {
+            const Icon = trustIcons[index] ?? IconShield;
+            return (
+              <li key={item.title} className="flex items-start gap-3">
+                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/8 text-accent">
+                  <Icon className="h-4 w-4" />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold">{item.title}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-white/50">{item.text}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </HeroSlider>
 
       <section className="bg-white py-14 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
