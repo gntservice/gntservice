@@ -20,7 +20,7 @@ export default function RealisationsPage() {
         description="Une sélection de missions en construction, traitement de surface et conception architecturale."
       />
       <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className="mx-auto grid max-w-7xl gap-5 px-4 sm:grid-cols-2 sm:gap-6 sm:px-6 lg:grid-cols-3 lg:px-8">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-3 px-4 sm:gap-6 sm:px-6 lg:grid-cols-3 lg:px-8">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}

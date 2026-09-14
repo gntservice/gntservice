@@ -29,7 +29,7 @@ export default function AboutPage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-12 lg:px-8">
           <div>
-            <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">Notre histoire</h2>
+            <h2 className="font-display text-xl font-semibold text-ink sm:text-3xl">Notre histoire</h2>
             <p className="mt-5 text-[0.95rem] leading-relaxed text-ink/65">
               Progressivement, GNT Service s’est dotée d’une organisation efficiente, adaptée aux
               évolutions techniques et aux besoins d’un secteur en forte expansion.
@@ -54,7 +54,7 @@ export default function AboutPage() {
 
       <section className="bg-[#f7f6f3] py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+          <h2 className="font-display text-xl font-semibold text-ink sm:text-3xl">
             Construction métallique
           </h2>
           <p className="mt-5 max-w-3xl text-[0.95rem] leading-relaxed text-ink/65">

@@ -541,7 +541,7 @@ export const partners = [
   { name: "OFPPT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395413/abjkadfsbjkdf.png" },
   {
     name: "Ministère de la Culture",
-    logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318842/2.jpg",
+    logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395401/ghyasdghyf.png",
   },
 ] as const;
 

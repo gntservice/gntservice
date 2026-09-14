@@ -13,7 +13,7 @@ export function PageHero({ eyebrow, title, description }: Props) {
             {eyebrow}
           </p>
         ) : null}
-        <h1 className="mt-3 max-w-3xl font-display text-[1.85rem] leading-[1.12] font-semibold tracking-tight sm:mt-4 sm:text-4xl md:text-5xl">
+        <h1 className="mt-3 max-w-3xl font-display text-[1.5rem] leading-[1.15] font-semibold tracking-tight sm:mt-4 sm:text-4xl md:text-5xl">
           {title}
         </h1>
         {description ? (

@@ -56,10 +56,10 @@ export default async function ServiceDetailPage({ params }: Props) {
             ]}
           />
           <p className="mt-6 text-[0.7rem] font-semibold tracking-[0.28em] text-accent uppercase">Nos services</p>
-          <h1 className="mt-3 max-w-3xl font-display text-[1.85rem] leading-tight font-semibold tracking-tight sm:mt-4 sm:text-4xl md:text-5xl">
+          <h1 className="mt-3 max-w-3xl font-display text-[1.5rem] leading-tight font-semibold tracking-tight sm:mt-4 sm:text-4xl md:text-5xl">
             {service.title}
           </h1>
-          <p className="mt-5 max-w-2xl text-base text-white/70">{service.description}</p>
+          <p className="mt-5 max-w-2xl text-sm text-white/70 sm:text-base">{service.description}</p>
         </div>
       </section>
 
@@ -68,8 +68,8 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className="space-y-10">
             {service.sections.map((section) => (
               <article key={section.title}>
-                <h2 className="font-display text-2xl font-semibold text-ink">{section.title}</h2>
-                <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/65">{section.body}</p>
+                <h2 className="font-display text-xl font-semibold text-ink sm:text-2xl">{section.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-ink/65 sm:text-[0.95rem]">{section.body}</p>
               </article>
             ))}
           </div>

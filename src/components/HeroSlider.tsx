@@ -80,10 +80,10 @@ export function HeroSlider({ children }: Props) {
         </div>
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 border-t border-white/10 pt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+          <div className="flex flex-col gap-3 border-t border-white/10 pt-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:pt-4">
             <Link
               href={`/services/${current.slug}`}
-              className="min-w-0 text-sm font-semibold text-white sm:text-base"
+              className="min-w-0 text-[0.8125rem] font-semibold text-white sm:text-base"
             >
               <span className="text-[0.65rem] font-semibold tracking-[0.22em] text-accent uppercase">
                 Service

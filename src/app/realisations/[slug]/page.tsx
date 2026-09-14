@@ -62,7 +62,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           <p className="mt-6 text-[0.7rem] font-semibold tracking-[0.28em] text-accent uppercase">
             {project.category}
           </p>
-          <h1 className="mt-3 max-w-3xl font-display text-[1.85rem] leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
+          <h1 className="mt-3 max-w-3xl font-display text-[1.5rem] leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
             {project.title}
           </h1>
         </div>
@@ -98,7 +98,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             ) : null}
           </div>
           <div>
-            <h2 className="font-display text-2xl font-semibold text-ink">{project.title}</h2>
+            <h2 className="font-display text-xl font-semibold text-ink sm:text-2xl">{project.title}</h2>
             <p className="mt-4 text-[0.95rem] leading-relaxed text-ink/65">{project.description}</p>
             <ul className="mt-6 space-y-3">
               {project.highlights.map((item) => (

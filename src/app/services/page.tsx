@@ -20,7 +20,7 @@ export default function ServicesPage() {
         description="GNT Service rassemble construction, services aux sites, ressources humaines et traitement de surface — pour un suivi unique de vos projets."
       />
       <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className="mx-auto grid max-w-7xl gap-5 px-4 sm:grid-cols-2 sm:gap-6 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-3 px-4 sm:gap-6 sm:px-6 lg:px-8 xl:grid-cols-4">
           {services.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}

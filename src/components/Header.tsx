@@ -55,12 +55,12 @@ export function Header() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-            <ButtonLink href="/contact" className="hidden !px-5 !py-2.5 text-[0.8rem] xl:inline-flex">
+            <ButtonLink href="/contact" className="hidden !min-h-10 !px-4 !py-2 text-[0.75rem] xl:inline-flex">
               Demander un devis
             </ButtonLink>
             <button
               type="button"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/12 text-ink xl:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/12 text-ink xl:hidden"
               aria-expanded={open}
               aria-controls="menu-mobile"
               aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
@@ -110,7 +110,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className={`rounded-2xl px-4 py-4 text-lg font-medium transition-colors sm:px-5 sm:py-5 sm:text-xl ${
+                    className={`rounded-xl px-3 py-3 text-base font-medium transition-colors sm:px-5 sm:py-5 sm:text-xl ${
                       active ? "bg-zinc-100 font-semibold text-ink" : "text-ink/70 hover:bg-zinc-50 hover:text-ink"
                     }`}
                     style={{ transitionDelay: open ? `${80 + index * 40}ms` : "0ms" }}

@@ -8,7 +8,7 @@ type Props = {
 
 function LogoCard({ name, logo }: { name: string; logo: string }) {
   return (
-    <div className="flex h-24 items-center justify-center rounded-2xl border border-ink/8 bg-white px-5 py-4 shadow-[0_1px_0_rgba(11,13,16,0.03)] transition duration-300 hover:border-accent/35 hover:shadow-md sm:h-28 sm:px-6">
+    <div className="flex h-20 items-center justify-center rounded-xl border border-ink/8 bg-white px-3 py-3 shadow-[0_1px_0_rgba(11,13,16,0.03)] transition duration-300 hover:border-accent/35 hover:shadow-md sm:h-28 sm:rounded-2xl sm:px-6 sm:py-4">
       <Photo
         src={logo}
         alt={name}
