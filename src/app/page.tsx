@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { IconArrow, IconGear, IconShield, IconUsers } from "@/components/icons";
+import { Partners } from "@/components/Partners";
 import { Photo } from "@/components/Photo";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -110,7 +111,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#f7f6f3] py-14 sm:py-20 lg:py-24">
+      <Partners variant="marquee" />
+
+      <section className="bg-white py-14 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading

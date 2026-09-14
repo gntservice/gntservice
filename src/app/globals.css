@@ -57,3 +57,31 @@ textarea {
     --header-h: 5rem;
   }
 }
+
+@keyframes partners-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.partners-marquee {
+  overflow: hidden;
+}
+
+.partners-track {
+  animation: partners-marquee 42s linear infinite;
+  will-change: transform;
+}
+
+.partners-marquee:hover .partners-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partners-track {
+    animation: none;
+  }
+}

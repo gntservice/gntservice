@@ -33,14 +33,14 @@ export const phones = [
     display: "+212 6 61 98 63 75",
     href: "tel:+212661986375",
   },
-  {
-    id: "whatsapp",
-    label: "WhatsApp",
-    display: "+212 6 61 70 65 01",
-    href: "https://wa.me/212661706501",
-    tel: "tel:+212661706501",
-    primary: true,
-  },
+  // {
+  //   id: "whatsapp",
+  //   label: "WhatsApp",
+  //   display: "+212 6 61 70 65 01",
+  //   href: "https://wa.me/212661706501",
+  //   tel: "tel:+212661706501",
+  //   primary: true,
+  // },
   {
     id: "fixe",
     label: "Fixe",
@@ -206,6 +206,208 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "structure-multi-etages",
+    title: "Structure multi-étages",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393081/980b912f-e7b8-4a10-896e-e64d3fcd413c.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393081/980b912f-e7b8-4a10-896e-e64d3fcd413c.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789393085/66ea647e-afe9-40b0-8d13-9f14c42f9550.jpg",
+    ],
+    excerpt:
+      "Modélisation 3D d’une structure métallique multi-étages : poteaux, planchers, escaliers et passerelles.",
+    description:
+      "Modélisation 3D d’une structure métallique multi-étages, destinée à la fabrication et au montage. Le modèle intègre poteaux, poutres, planchers, escaliers, garde-corps et passerelles, avec un repérage précis des assemblages pour un dossier de fabrication fiable.",
+    highlights: [
+      "Structure métallique à plusieurs niveaux",
+      "Escaliers, planchers et passerelles",
+      "Détails d’assemblage et repérages",
+      "Préparation du dossier de fabrication",
+    ],
+    closing: "De la modélisation 3D à la fabrication et au montage.",
+  },
+  {
+    slug: "structure-metallique-ifrane",
+    title: "Structure métallique — Ifrane",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392955/4f61b814-06c9-437a-a74d-7dbc0b78d551.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392955/4f61b814-06c9-437a-a74d-7dbc0b78d551.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392886/83931f4b-63e4-45b6-aaa2-7e13d0ba6942.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392962/a02a6944-ba4f-454c-b759-f03e2974ef07.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392868/f62e0341-e25c-4853-80c3-afbcde87a0ba.jpg",
+    ],
+    excerpt:
+      "Charpente métallique à Ifrane : poteaux, atrium vitré, hall et amphithéâtre, du chantier à la livraison.",
+    description:
+      "Réalisation d’une structure métallique à Ifrane, de la pose des poteaux jusqu’à l’atrium vitré et les espaces intérieurs. GNT Service a accompagné le montage de l’ossature, les volumes vitrés, l’éclairage architectural et les finitions bois d’un hall et d’un amphithéâtre, dans un climat de montagne exigeant.",
+    highlights: [
+      "Poteaux et ossature métallique",
+      "Atrium vitré de grande hauteur",
+      "Hall d’accueil et amphithéâtre",
+      "Éclairage architectural et finitions bois",
+    ],
+    closing: "Un ouvrage contemporain, du gros œuvre aux finitions — Ifrane.",
+  },
+  {
+    slug: "voliere",
+    title: "Projet volière",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392840/96571556-b47b-4a37-8abd-7a14a8f311f2.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392840/96571556-b47b-4a37-8abd-7a14a8f311f2.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392831/8ff634d6-cb2d-48a6-a14f-52976cff0fb2.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392822/e4930937-ed05-40a4-99c4-749c3470b7ed.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392821/8847c53a-ac18-4b62-9e9a-898f0786ae3a.jpg",
+    ],
+    excerpt:
+      "Réalisation d’une volière : mâts métalliques, câbles, fondations et intégration dans un espace paysager.",
+    description:
+      "GNT Service a réalisé la structure d’une volière : implantation des mâts métalliques, fondations en béton, haubanage et réseau de câbles. Le chantier s’inscrit dans un site paysager, avec un soin particulier apporté à la précision du montage et à la stabilité de l’ouvrage.",
+    highlights: [
+      "Mâts métalliques et têtes circulaires",
+      "Fondations béton et ancrages",
+      "Câbles et haubanage de la volière",
+      "Intégration dans un environnement paysager",
+    ],
+    closing: "Une structure légère, précise et durable.",
+  },
+  {
+    slug: "dome-metallique",
+    title: "Projet dôme métallique",
+    category: "Charpente métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392747/754bf8d3-55a7-4681-a358-6eb31fef2e44.jpg",
+    excerpt:
+      "Montage d’un dôme métallique : arcs de grande portée, levage à la grue et assemblages sur chantier.",
+    description:
+      "Réalisation d’un dôme métallique sur un ouvrage en béton. GNT Service a assuré la fabrication des arcs, le levage à la grue et le montage de la charpente de grande portée, avec un suivi précis des assemblages et de la sécurité sur chantier.",
+    highlights: [
+      "Charpente métallique en dôme",
+      "Arcs de grande portée",
+      "Levage et montage à la grue",
+      "Assemblages et suivi sur site",
+    ],
+    closing: "Une structure élégante, montée avec rigueur.",
+  },
+  {
+    slug: "structure-metallique-containers",
+    title: "Structure métallique avec containers",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392737/a5345e17-627b-4dbc-9777-4a6bcf1b4504.jpg",
+    excerpt:
+      "Réalisation d’une structure métallique associée à des containers : couverture, ossature et aménagement de volumes.",
+    description:
+      "Réalisation d’une structure métallique avec containers : ossature, couverture bac acier et assemblage des modules pour créer un abri et des locaux. GNT Service a assuré la charpente, le montage sur site et l’intégration des containers dans un volume unique, fonctionnel et durable.",
+    highlights: [
+      "Ossature métallique et couverture",
+      "Intégration de containers superposés",
+      "Locaux et espace couvert sous hangar",
+      "Montage et assemblages sur chantier",
+    ],
+    closing: "Une solution modulaire, de la structure à l’aménagement.",
+  },
+  {
+    slug: "sablage-benne-industrielle",
+    title: "Sablage d’une benne industrielle",
+    category: "Traitement de surface",
+    serviceSlug: "sablage-peinture",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392712/6ff83b70-92ac-42f1-ba33-371eeef2d5b7.jpg",
+    excerpt:
+      "Sablage et préparation de surface d’une benne métallique, avant traitement anticorrosion et peinture.",
+    description:
+      "Intervention de sablage sur une benne industrielle : décapage et préparation de surface pour garantir l’adhérence du revêtement. Le traitement anticorrosion, la peinture industrielle et le contrôle qualité viennent ensuite, pour une finition durable.",
+    highlights: [
+      "Sablage et peinture",
+      "Sablage et métallisation",
+      "Décapage et préparation de surface",
+      "Traitement anticorrosion",
+      "Peinture industrielle",
+      "Finition et contrôle qualité",
+    ],
+    closing: "Des surfaces préparées, protégées et contrôlées.",
+  },
+  {
+    slug: "charpente-sablage-peinture",
+    title: "Charpente métallique — sablage et peinture",
+    category: "Traitement de surface",
+    serviceSlug: "sablage-peinture",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392673/cccb6244-5543-4d3e-a361-93ae4e11d82d.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392673/cccb6244-5543-4d3e-a361-93ae4e11d82d.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392671/6e12571d-5f94-4629-99f2-796c27840e61.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392669/5fa1adac-3bf5-47a4-b7c5-dd90c69e5b37.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392675/6668170c-c0e8-4932-a9fc-7e962343d159.jpg",
+    ],
+    excerpt:
+      "Sablage, peinture industrielle et montage de charpente métallique, de l’atelier jusqu’au chantier.",
+    description:
+      "GNT Service assure le sablage, la métallisation et la peinture industrielle des éléments de charpente, puis leur acheminement et leur montage sur site. Le traitement anticorrosion et le contrôle qualité accompagnent chaque pièce, des poutres et fermes jusqu’aux équipements (cuves et structures).",
+    highlights: [
+      "Sablage et peinture",
+      "Sablage et métallisation",
+      "Décapage et préparation de surface",
+      "Traitement anticorrosion",
+      "Peinture industrielle",
+      "Finition et contrôle qualité",
+    ],
+    closing: "Des surfaces préparées, protégées et contrôlées.",
+  },
+  {
+    slug: "sablage-peinture-controle-qualite",
+    title: "Sablage & peinture industrielle",
+    category: "Traitement de surface",
+    serviceSlug: "sablage-peinture",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392612/70545519-c6ca-4fb4-8a9a-e3d7322180ff.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392612/70545519-c6ca-4fb4-8a9a-e3d7322180ff.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392611/ad16b8a6-2433-4795-a4f5-7472eb454ae3.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392617/d549fca1-bf79-42e8-8d74-5c3153340ebf.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392615/8b51b880-86e1-4e49-b710-3337d8f119d2.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789392620/31f7505c-b258-481b-8f2e-c07469145fd9.jpg",
+    ],
+    excerpt:
+      "Sablage, métallisation, anticorrosion et peinture industrielle, jusqu’au contrôle d’épaisseur et à la finition.",
+    description:
+      "GNT Service prépare et protège les pièces métalliques de bout en bout : sablage, métallisation, décapage, traitement anticorrosion et peinture industrielle. La finition est validée par un contrôle qualité sur site, notamment la mesure d’épaisseur du revêtement, pour des ouvrages durables.",
+    highlights: [
+      "Sablage et peinture",
+      "Sablage et métallisation",
+      "Décapage et préparation de surface",
+      "Traitement anticorrosion",
+      "Peinture industrielle",
+      "Finition et contrôle qualité",
+    ],
+    closing: "Des surfaces préparées, protégées et contrôlées.",
+  },
+  {
+    slug: "structure-metallique-montage-finition",
+    title: "Structure métallique — montage et finition",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789319437/a108c466-fc66-4be8-a36b-3fcf40e7343c.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789319437/a108c466-fc66-4be8-a36b-3fcf40e7343c.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789319439/a9ac72ec-f3a4-40f7-83fd-363e00e0be95.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789319440/862e7b18-4962-4ad3-8755-ba7b2daea894.jpg",
+    ],
+    excerpt:
+      "Réalisation et montage d’une structure métallique, avec travaux de finition sur chantier.",
+    description:
+      "Réalisation et montage d’une structure métallique avec travaux de finition sur chantier. GNT Service a assuré la fabrication de la charpente, l’assemblage des fermes, la peinture industrielle et la mise en œuvre des habillages, jusqu’à la livraison d’un volume prêt à l’usage.",
+    highlights: [
+      "Fabrication et assemblage de la charpente métallique",
+      "Montage des fermes et de l’ossature sur site",
+      "Peinture industrielle et finitions sur chantier",
+      "Habillage et mise en service de la structure",
+    ],
+    closing: "De l’atelier au chantier, une structure montée et finie.",
+  },
+  {
     slug: "stade-moulay-abdellah-rabat",
     title: "Projet Stade Moulay Abdellah — Rabat",
     category: "Charpente métallique",
@@ -228,6 +430,29 @@ export const projects: Project[] = [
       "Coordination des travaux à Rabat",
     ],
     closing: "GNT Service — Du projet à la réalisation, à l’échelle des grands ouvrages.",
+  },
+  {
+    slug: "hall-atrium-amphitheatre",
+    title: "Hall d’accueil et amphithéâtre",
+    category: "Construction & aménagement",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318515/fbadd0f1-e39a-4879-a8c6-a681e5d55c0a.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318515/fbadd0f1-e39a-4879-a8c6-a681e5d55c0a.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318513/47174c1f-cf23-4334-bd4a-ce631e6920e3.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318511/46caa245-5406-4813-b094-4613c6358c43.jpg",
+    ],
+    excerpt:
+      "Réalisation d’un hall vitrée et d’un amphithéâtre : structure, menuiseries, finitions bois et éclairage.",
+    description:
+      "Ce projet tertiaire associe une structure métallique vitrée en atrium, un hall d’accueil et un amphithéâtre aux finitions soignées. GNT Service a accompagné la réalisation : ossature, volumes vitrés, habillage intérieur en bois et mise en lumière, de l’extérieur jusqu’aux espaces de réception.",
+    highlights: [
+      "Atrium vitré et structure métallique",
+      "Hall d’accueil et accès monumentaux",
+      "Amphithéâtre et habillage bois",
+      "Éclairage architectural et finitions",
+    ],
+    closing: "Un ouvrage contemporain, du gros œuvre aux finitions.",
   },
   {
     slug: "ferraillage-coffrage-beton",
@@ -265,25 +490,6 @@ export const projects: Project[] = [
     ],
     closing: "GNT Service — De la modélisation 3D à la fabrication et au montage.",
   },
-  {
-    slug: "sablage-peinture-controle-qualite",
-    title: "Sablage & peinture industrielle",
-    category: "Traitement de surface",
-    serviceSlug: "sablage-peinture",
-    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789310831/Screenshot_2026-09-13_154426.png",
-    excerpt:
-      "Sablage, métallisation, anticorrosion et peinture industrielle, jusqu’au contrôle d’épaisseur et à la finition.",
-    description:
-      "GNT Service prépare et protège les pièces métalliques de bout en bout : sablage, métallisation, décapage, traitement anticorrosion et peinture industrielle. La finition est validée par un contrôle qualité sur site, notamment la mesure d’épaisseur du revêtement, pour des ouvrages durables.",
-    highlights: [
-      "Sablage et métallisation",
-      "Décapage et préparation de surface",
-      "Traitement anticorrosion",
-      "Peinture industrielle",
-      "Finition et contrôle qualité",
-    ],
-    closing: "Des surfaces préparées, protégées et contrôlées.",
-  },
 ];
 
 export function getProject(slug: string) {
@@ -301,6 +507,24 @@ export const trust = [
   { title: "Qualité garantie", text: "Des prestations contrôlées, de la préparation à la livraison." },
   { title: "Équipements modernes", text: "Des moyens adaptés aux exigences industrielles." },
   { title: "Accompagnement sur mesure", text: "Un interlocuteur unique, du devis à la réception." },
+] as const;
+
+export const partners = [
+  { name: "OCP", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318850/12.jpg" },
+  { name: "SGTM", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318845/5.jpg" },
+  { name: "TGCC", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318846/7.jpg" },
+  { name: "Lafarge", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318849/10.jpg" },
+  { name: "Ciments du Maroc", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318845/6.jpg" },
+  { name: "Jacobs", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318843/3.jpg" },
+  { name: "Atlas Copco", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318851/1.jpg" },
+  { name: "Managem", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318847/8.jpg" },
+  { name: "Tractafric CAT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318844/4.jpg" },
+  { name: "SOGEA Maroc", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318848/9.jpg" },
+  { name: "OFPPT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318852/11.jpg" },
+  {
+    name: "Ministère de la Culture",
+    logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318842/2.jpg",
+  },
 ] as const;
 
 export const faqs = [

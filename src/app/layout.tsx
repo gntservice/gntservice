@@ -115,7 +115,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
-        <WhatsAppButton />
+        {/* <WhatsAppButton /> */}
       </body>
     </html>
   );

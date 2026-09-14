@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/Button";
 import { PageHero } from "@/components/PageHero";
+import { Partners } from "@/components/Partners";
 import { Photo } from "@/components/Photo";
 import { images, site, stats } from "@/lib/site";
 
@@ -86,6 +87,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <Partners variant="grid" />
 
       <section className="bg-ink py-12 text-white sm:py-16">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 sm:gap-8 sm:px-6 lg:grid-cols-4 lg:px-8">
