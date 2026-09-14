@@ -65,9 +65,9 @@ export const images = {
     "https://images.unsplash.com/photo-1581094794329-cdc91e13ffd3?auto=format&fit=crop&w=2000&q=80",
   cta: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2000&q=80",
   architecture:
-    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+    "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395577/photo-1503387762-592deb58ef4e.avif",
   metal:
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
+    "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395580/photo-1504307651254-35680f356dfd.avif",
 } as const;
 
 export type Service = {
@@ -528,17 +528,17 @@ export const trust = [
 ] as const;
 
 export const partners = [
-  { name: "OCP", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318850/12.jpg" },
-  { name: "SGTM", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318845/5.jpg" },
-  { name: "TGCC", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318846/7.jpg" },
-  { name: "Lafarge", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318849/10.jpg" },
-  { name: "Ciments du Maroc", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318845/6.jpg" },
-  { name: "Jacobs", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318843/3.jpg" },
-  { name: "Atlas Copco", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318851/1.jpg" },
-  { name: "Managem", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318847/8.jpg" },
-  { name: "Tractafric CAT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318844/4.jpg" },
-  { name: "SOGEA Maroc", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318848/9.jpg" },
-  { name: "OFPPT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318852/11.jpg" },
+  { name: "OCP", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395408/jkldfjajkl.png" },
+  { name: "SGTM", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395406/hjkladshkdjf.png" },
+  { name: "TGCC", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395415/adhjklshjkdfsahjkadfs.png" },
+  { name: "Lafarge", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395395/ashjkadshi.png" },
+  { name: "Ciments du Maroc", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395393/adshjkldahjks.png" },
+  { name: "Jacobs", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395410/lhjkahld.png" },
+  { name: "Atlas Copco", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395397/hjklaadhjk.png" },
+  { name: "Managem", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395391/afklhadfhj.png" },
+  { name: "Tractafric CAT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395404/hjkladffhjkd.png" },
+  { name: "SOGEA Maroc", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395399/adhjkshkadfsads.png" },
+  { name: "OFPPT", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395413/abjkadfsbjkdf.png" },
   {
     name: "Ministère de la Culture",
     logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789318842/2.jpg",
