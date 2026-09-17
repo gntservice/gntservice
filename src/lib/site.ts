@@ -202,6 +202,43 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "vue-globale-3d-charpente-metallique",
+    title: "Vue globale 3D d’une charpente métallique",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789659271/WhatsApp_Image_2026-09-17_at_12.51.25.jpg",
+    excerpt:
+      "Présentation 3D de l’ensemble d’une charpente métallique : niveaux, éléments porteurs et préparation technique.",
+    description:
+      "Une présentation 3D permettant de visualiser l’ensemble de la structure, ses différents niveaux et ses éléments porteurs.",
+    highlights: [
+      "Modélisation 3D",
+      "Charpente métallique",
+      "Étages et escalier",
+      "Préparation technique",
+    ],
+    closing: "GNT Service — Du projet à la réalisation.",
+  },
+  {
+    slug: "projet-industriel-structure-metallique",
+    title: "Projet industriel — Structure métallique",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789659265/WhatsApp_Image_2026-09-17_at_12.49.29.jpg",
+    excerpt:
+      "De la conception des plans à la fabrication, au montage, au sablage et à la peinture — un projet industriel mené de bout en bout.",
+    description:
+      "De la conception et réalisation des plans jusqu’à la fabrication, au montage sur site, au sablage et à la peinture, GNT Service assure l’ensemble des étapes du projet.",
+    highlights: [
+      "Conception et dessin technique",
+      "Fabrication de la structure métallique",
+      "Montage sur chantier",
+      "Sablage et peinture industrielle",
+      "Travaux en hauteur avec nacelle élévatrice",
+    ],
+    closing: "GNT Service — Du projet à la réalisation.",
+  },
+  {
     slug: "charpente-metallique-couverture",
     title: "Charpente métallique pour couverture",
     category: "Construction métallique",
