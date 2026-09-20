@@ -202,6 +202,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "projet-industriel-etude-realisation",
+    title: "Projet industriel — De l’étude à la réalisation",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789924333/e265226b-5c14-48cf-811b-f133233d05f6.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789924333/e265226b-5c14-48cf-811b-f133233d05f6.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789924331/5269ad23-a631-4a2a-aea8-e5a33a21ebdf.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789924335/ccce3db4-c949-4756-944d-0d2115105609.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789924343/bb247966-9d23-4741-a149-9207a9a52b22.jpg",
+    ],
+    excerpt:
+      "Intervention complète : étude, dessin technique, montage de la structure métallique, sablage et préparation de surface.",
+    description:
+      "GNT Service intervient sur l’ensemble du projet : étude et dessin technique, montage de la structure métallique, sablage et préparation de surface. Une intervention complète, de la conception à la réalisation sur site.",
+    highlights: [
+      "Étude et dessin technique",
+      "Montage de la structure métallique",
+      "Sablage et préparation de surface",
+    ],
+    closing: "GNT Service — Du projet à la réalisation.",
+  },
+  {
     slug: "vue-globale-3d-charpente-metallique",
     title: "Vue globale 3D d’une charpente métallique",
     category: "Construction métallique",
