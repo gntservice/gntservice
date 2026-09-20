@@ -202,6 +202,28 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "structure-metallique-industrielle",
+    title: "Réalisation d’une structure métallique industrielle",
+    category: "Construction métallique",
+    serviceSlug: "construction-amenagement",
+    image: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789925712/2b0dbba2-7744-4686-ae75-ca823abe5f8b.jpg",
+    images: [
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789925712/2b0dbba2-7744-4686-ae75-ca823abe5f8b.jpg",
+      "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789925713/718abddd-1708-4e62-bada-8211fa525454.jpg",
+    ],
+    excerpt:
+      "Conception, fabrication et montage d’une structure métallique industrielle, avec suivi complet sur chantier.",
+    description:
+      "Un nouveau projet réalisé par GNT Service, avec une intervention complète sur site : conception et préparation technique, fabrication des éléments métalliques, montage de la structure sur chantier, coordination et suivi des travaux. Une réalisation pensée pour répondre aux exigences du projet, avec un suivi rigoureux à chaque étape.",
+    highlights: [
+      "Conception et préparation technique",
+      "Fabrication des éléments métalliques",
+      "Montage de la structure métallique sur chantier",
+      "Coordination et suivi des travaux",
+    ],
+    closing: "GNT Service — Du projet à la réalisation.",
+  },
+  {
     slug: "projet-industriel-etude-realisation",
     title: "Projet industriel — De l’étude à la réalisation",
     category: "Construction métallique",
