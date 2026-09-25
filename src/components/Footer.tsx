@@ -84,8 +84,19 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/8">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-2 px-4 py-5 pb-[max(5rem,env(safe-area-inset-bottom))] text-xs text-white/40 sm:flex-row sm:px-6 sm:pb-5 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-2 px-4 py-5 pb-[max(5rem,env(safe-area-inset-bottom))] text-xs text-white/40 sm:flex-row sm:items-center sm:px-6 sm:pb-5 lg:px-8">
           <p>© {new Date().getFullYear()} {site.name}. Tous droits réservés.</p>
+          <p>
+            Site réalisé par{" "}
+            <a
+              href="https://mehdicodes.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/55 underline-offset-2 transition-colors hover:text-accent hover:underline"
+            >
+              Mehdi Codes
+            </a>
+          </p>
           <p>Casablanca — Maroc</p>
         </div>
       </div>

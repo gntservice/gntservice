@@ -625,6 +625,13 @@ export const partners = [
     name: "Ministère de la Culture",
     logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1789395401/ghyasdghyf.png",
   },
+  { name: "JESA", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351601/a915f567-db46-4fb5-b0cd-f3770ebdd549.jpg" },
+  { name: "ONCF", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351585/b727e511-6827-4c03-a8a0-65c5389d8918.jpg" },
+  { name: "Gofer Afric", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351584/e99dcab5-b912-4c09-952c-22986b71a4ac.jpg" },
+  { name: "Hydro Systemes", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351578/ee66eddf-0e42-4fcf-920b-12f82118c2bc.jpg" },
+  { name: "Remorques Equipements", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351575/7861fdde-d4fa-4c34-abbf-f1364450d755.jpg" },
+  { name: "Elexpert", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351574/7c3eb5d9-f076-4f56-b8ac-fdc7ad59a883.jpg" },
+  { name: "Maroc Sealing", logo: "https://res.cloudinary.com/wsqmoe8l/image/upload/v1790351573/7a11b779-b365-43e2-8f2c-031454bcc906.jpg" },
 ] as const;
 
 export const faqs = [
