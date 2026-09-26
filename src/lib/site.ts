@@ -7,7 +7,7 @@ export const site = {
   country: "Maroc",
   postalCode: "20250",
   street: "Rue C",
-  address: "Rue C, 20250 Casablanca, Maroc",
+  address: "Casablanca, Maroc",
   email: "contact@gntservice.ma",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gntservice.ma",
   linkedin: "",
